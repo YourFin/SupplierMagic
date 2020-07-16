@@ -54,7 +54,7 @@ public class LazySupplier<T> implements Supplier<T> {
 	// Note the lack of static on the next line
 	private class SyncronizedOneShotSupplier<T> implements Supplier<T> {
 		private final Supplier<T> wrappedThunk;
-		pubilc SyncronizedOneShotSupplier(Supplier<T> wrappedThunk) {
+		public SyncronizedOneShotSupplier(Supplier<T> wrappedThunk) {
 			this.wrappedThunk = wrappedThunk;
 		}
 
